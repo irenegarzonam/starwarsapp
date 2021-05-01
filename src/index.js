@@ -10,7 +10,12 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+let baseUrl='http https://swapi.dev/api/people/1/'
 
+fetch(baseUrl).then(response => response.json())
+.then(json =>{
+
+})
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
